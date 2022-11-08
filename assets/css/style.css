@@ -10,6 +10,7 @@
 .header-links {
 	text-decoration: none;
 	font-weight: bold;
+	color: black;
 }
 
 .header-links:hover {
@@ -18,6 +19,11 @@
 
 .hero {
 	background-image: url("../images/background-img.png");
+	background-size:100% 100%;
+}
+
+.hero2 {
+	background-image: url("../images/background-img2.jpg");
 	background-size:100% 100%;
 }
 
@@ -35,6 +41,16 @@
 	margin-top: 1rem;
 }
 
+.btn-primary {
+	background-color: #4f1d58;
+	border-color: #4f1d58
+}
+
+.btn-primary:hover {
+	background-color: #70297D;
+	border-color: #70297D
+}
+
 .description {
 	background-color: #4f1d58;
 	color: white;
@@ -48,5 +64,22 @@
 
 .footer {
 	background-color: #4f1d58;
+	margin-top: 5rem;
+	padding-top: 5rem;
 	color: white;
+}
+
+.footer-links {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.footer-links:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.footer-icons li {
+	font-size: 3rem;
 }
