@@ -51,8 +51,8 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-	  		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
+	  		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-5 pr-5">
 				  <li class="nav-item active">
 					<a class="nav-link header-links" href="index.html">PORTFOLIO</a>
 				  </li>
@@ -70,7 +70,7 @@
 		</nav>
 	</div>
 	
-	<div class="px-4 py-5 my-5 text-center hero">
+	<div class="px-4 py-5 text-center hero">
 		<h1 class="display-5 hero-title">DESIGNER • HIKER • PHOTOGRAPHER</h1>
 		
 		<div class="col-lg-6 mx-auto">
@@ -83,9 +83,12 @@
 	
 	<section class="sld" style="text-align: center;">
 		<h2 class="text-center mt-5 mb-5">PDF DESIGN</h2>
-		
+
 		<div class="container">
-			<ul class="slider">
+			
+			
+			
+			<ul class="slider">				
 				<li>
 		    	  <img src="assets/images/Slider 2/Chronic-Disease2.jpg" width="264" height="341" alt=""/>
 				</li>
@@ -129,7 +132,10 @@
 				<li>
 					<img src="assets/images/Slider 2/Guide7.jpg" width="264" height="341" alt=""/>
 				</li>
-			</ul>			
+			</ul>
+			
+			<div class="arrows prev"></div>
+			<div class="arrows next"></div>
 		</div>
     	
 	</section>
@@ -138,9 +144,9 @@
 		<div class="container">
 			<h2 class="pt-5" style="font-size: 2.5">HI! I’M ARIEL, YOUR NEXT DESIGNER</h2>
 		
-			<p class="pt-3" style="font-size: 1.5rem">I have 10 years of experience working in the education and health industry designing PDFs, social media graphics, emails, landing pages and much more. Contact me to discuss your next design project  and how I can help solve the best way to speak to your audience.</p>
+			<p class="pt-3" style="font-size: 1rem">I have 10 years of experience working in the education and health industry designing PDFs, social media graphics, emails, landing pages and much more. Contact me to discuss your next design project  and how I can help solve the best way to speak to your audience.</p>
 		
-			<p  class="pt-3"  style="font-size: 1.5rem">When I am not designing, I love to go out to nature and hike. One day I decidd I wanted to go on some real hikes and  hopped on a plane for a solo 10 day hiking trip in Utah. The next year I went for 5 days in Arizona. The Colorado for 5 days. There is nothing like nature! Looking forward to my next time in nature. You can see some of the pictures from my trip on my photogrpahy page.</p>
+			<p  class="pt-3"  style="font-size: 1rem">When I am not designing, I love to go out to nature and hike. One day I decidd I wanted to go on some real hikes and  hopped on a plane for a solo 10 day hiking trip in Utah. The next year I went for 5 days in Arizona. The Colorado for 5 days. There is nothing like nature! Looking forward to my next time in nature. You can see some of the pictures from my trip on my photogrpahy page.</p>
 		</div>
 		
 	</section>
@@ -182,7 +188,7 @@
 	</section>
 	
 	<div class="footer">
-  		<footer class="">
+  		<footer>
     		<ul class="nav justify-content-center">
       			<li class="nav-item"><a href="index.html" class="nav-link px-2 footer-links">PORTFOLIO</a></li>
 				<li class="nav-item"><a href="photography.html" class="nav-link px-2 footer-links">PHOTOGRAPHY</a></li>
@@ -193,12 +199,6 @@
 			<ul class="nav justify-content-center mt-3 footer-icons">
 				<li class="px-2">
 					<i class="bi-linkedin"></i>
-				</li>
-				<li class="px-2">
-					<i class="bi-twitter"></i>
-				</li>
-				<li class="px-2">
-					<i class="bi-facebook"></i>
 				</li>
 			</ul>
   		</footer>
@@ -213,14 +213,13 @@
 	<script>
 		$('.slider').slick({
 			accessibility:true,
-			
-			//Add arrows in some place
-			appendArrows: $(".arrow"),
-			arrows:true,
 
+			arrows:true,
+			prevArrow:'<div class="arrows prev"></div>',
+        	nextArrow:'<div class="arrows next"></div>',
 			
-	  		dots: true,
-	  		infinite: false,
+	  		dots: false,
+	  		infinite: true,
 	  		speed: 300,
 			
 	  		slidesToShow: 3,
@@ -252,7 +251,7 @@
 		}
 	  ]
 	});
-	
+		
 	</script>
 </body>
 	

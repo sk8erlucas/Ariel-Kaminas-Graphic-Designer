@@ -19,19 +19,21 @@
 
 .hero {
 	background-image: url("../images/background-img.png");
-	background-size:100% 100%;
+	background-size: cover;
+	padding-bottom: 2rem;
 }
 
 .hero2 {
 	background-image: url("../images/background-img2.jpg");
-	background-size:100% 100%;
+	background-size: cover;
+	padding-bottom: 2rem;
 }
 
 .hero-title {
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: white;
-	margin-top: 10rem;
+	margin-top: 6rem;
 }
 
 .hero-subtitle {
@@ -43,12 +45,14 @@
 
 .btn-primary {
 	background-color: #4f1d58;
-	border-color: #4f1d58
+	border-color: #4f1d58;
+	border-radius: 0;
 }
 
 .btn-primary:hover {
-	background-color: #70297D;
-	border-color: #70297D
+	background-color: #4f1d58;
+	border-color: #4f1d58;
+	border-radius: 0;
 }
 
 .description {
@@ -61,6 +65,31 @@
 	padding-bottom: 3rem;
 	margin-bottom: 5rem;
 }
+
+.arrows {
+  width: 48px;
+  height: 48px;
+  border-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  cursor: pointer;
+}
+
+.prev {
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  transform: rotate(45deg);
+  left: -1%;
+}
+
+.next {
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  transform: rotate(-135deg);
+  right: -1%;
+}
+
 
 .footer {
 	background-color: #4f1d58;
