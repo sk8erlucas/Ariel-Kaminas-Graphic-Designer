@@ -83,17 +83,33 @@
 }
 
 .prev {
-  border-bottom: 6px solid;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  
+  border-right: 20px solid; 
+  left: -1%;
+	
+  /*border-bottom: 6px solid;
   border-left: 6px solid;
   transform: rotate(45deg);
-  left: -1%;
+  left: -1%;*/
 }
 
 .next {
-  border-bottom: 6px solid;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid;
+  right: -1%;
+	
+  /*border-bottom: 6px solid;
   border-left: 6px solid;
   transform: rotate(-135deg);
-  right: -1%;
+  right: -1%;*/
 }
 
 
